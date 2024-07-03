@@ -54,6 +54,11 @@ html.reveal-full-page {
 	//text sizes
 	--text-sm: 18px;
 	--text-md: 25px;
+	--text-lg: 30px;
+
+	//Sizing, Margins and Borders
+	--border-radius: 8px;
+
  }
 
  .vertical-divider{
@@ -73,9 +78,14 @@ html.reveal-full-page {
 //List Slide Component
 .list-slide{
 	text-align: start;
+	font-size: var(--text-lg);
 }
 .list-slide ul li {
 	font-size: 0.7em;
+}
+
+.standalone-image{
+	border-radius: var(--border-radius);
 }
 
 //Image Text Slide Component
@@ -87,8 +97,8 @@ html.reveal-full-page {
 	width: 50%;
 	text-align: start;
 }
-.image-text-slide .text-section p {
-	font-size: 25px;
+.image-text-slide .text-section {
+	font-size: var(--text-md);
 }
 
 .image-text-slide .image-section{
